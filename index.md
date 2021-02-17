@@ -29,7 +29,7 @@
         <div class="middle"></div>
 
         <div id="intro" class="section">
-            <img id="silhouette" src="images/sil.png" alt="silhouette of Ed's desk">
+            <img id="silhouette" src="./images/sil.png" alt="silhouette of Ed's desk">
 
         </div>
 
@@ -45,8 +45,8 @@
 
             <div class="container-2">
                 <figure>
-                    <img class="profile" src="images/ed.jpg" alt="picture of Ed">
-                    <img class="profile-aged" src="images/ed2.jpg" alt="aged picture of Ed">
+                    <img class="profile" src="./images/ed.jpg" alt="picture of Ed">
+                    <img class="profile-aged" src="./images/ed2.jpg" alt="aged picture of Ed">
                     <figcaption>Hover over the photo for a visualisation of my progress.</figcaption>
                 </figure>    
             </div>
@@ -72,15 +72,15 @@
                     Construction. </p>
             </div>
 
-            <img src="images/laptop.png" alt="">
+            <img src="./images/laptop.png" alt="">
 
             <h2 class="mission"> I'm searching for an entry-level position to begin my career as a professional.</h2>
         </div>
 
         <div id="projects" class="section">
 
-            <img src="images/hammer.png" class="hammer-1" alt="hammer image">
-            <img src="images/hammer.png" class="hammer-2" alt="hammer image">
+            <img src="./images/hammer.png" class="hammer-1" alt="hammer image">
+            <img src="./images/hammer.png" class="hammer-2" alt="hammer image">
 
             <div class="container-1">
                 <h1>My Projects</h1>
@@ -141,15 +141,15 @@
             </div>
 
             <div class="container-2">
-                <img src="images/connect.png" alt="connection icon">
+                <img src="./images/connect.png" alt="connection icon">
             </div>
 
             <div class="container-3">
                 <ul>
-                    <li><a href=""><img class="icon" src="images/email.png" alt="Email icon"> <span>Email</span> </a></li>
-                    <li><a href="https://www.linkedin.com/in/edward-stokes-6503011b9/"> <img class="icon" src="images/linkedin.png" alt="linkedin icon"><span>Linkedin</span></a></li>
-                    <li><a href="https://github.com/EdwardStokes"><img class="icon" src="images/git.png" alt="github icon"><span>Github</span></a></li>
-                    <li><a href="https://www.codewars.com/users/SlyEdE"><img class="icon" src="images/codewars.png" alt="codewars icon"><span>Codewars</span></a></li>
+                    <li><a href=""><img class="icon" src="./images/email.png" alt="Email icon"> <span>Email</span> </a></li>
+                    <li><a href="https://www.linkedin.com/in/edward-stokes-6503011b9/"> <img class="icon" src="./images/linkedin.png" alt="linkedin icon"><span>Linkedin</span></a></li>
+                    <li><a href="https://github.com/EdwardStokes"><img class="icon" src="./images/git.png" alt="github icon"><span>Github</span></a></li>
+                    <li><a href="https://www.codewars.com/users/SlyEdE"><img class="icon" src="./images/codewars.png" alt="codewars icon"><span>Codewars</span></a></li>
                 </ul>
             </div>
 
