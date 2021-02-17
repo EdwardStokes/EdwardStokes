@@ -29,7 +29,7 @@
         <div class="middle"></div>
 
         <div id="intro" class="section">
-            <img id="silhouette" src="./images/sil.png" alt="silhouette of Ed's desk">
+            <img id="silhouette" src="images/sil.png" alt="silhouette of Ed's desk">
 
         </div>
 
