@@ -1,6 +1,6 @@
 *{
-    margin: 0px;
     padding: 0px;
+    margin: 0px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
     border-width: 1px;
     border-color: #004832;
@@ -22,7 +22,6 @@ a {
 }
 
 p {
-    max-width: 60ch;
     line-height: 1.5;
     padding: 15px 0px;
 }
@@ -43,12 +42,15 @@ header {
 }
 
 .section {
-    width: 1300px;
-    height: 20%;
+    min-height: 20%;
     position: relative;
     padding: 85px 0px 0px;
-    display: flexbox;
     margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .inner-header {
@@ -119,10 +121,10 @@ figcaption{
 
 .profile, .profile-aged {
     position: absolute;
-    right: 395px;
-    bottom: 190px;   
-    max-width: 500px; 
-    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
     border-style:solid;
     border-width: 1px;
     border-radius: 50%;
@@ -149,26 +151,42 @@ figcaption{
 }
 
 #home .container-1 {
-    position: absolute;
     text-align: center;
-    left: 425px;
-    max-width: 45ch;
+    padding: 0 25%;
 }
 
 #home .container-1 span {
     font-size: xx-large;
 }
 
+#home .container-2 {
+    text-align: center;
+}
+
+#home figure {
+    display: inline-block;
+    position: relative;
+    max-width: 100%;
+    width: 500px;
+    height: 500px;
+}
+
 #home .container-3 {
-    position: absolute;
-    left: 575px;
-    bottom: 70px
+   text-align: center;
+   padding: 30px 0;
+}
+
+#about .flex {
+    justify-content: space-around;
 }
 
 #about .container-1 {
-    position: absolute;
-    top: 120px;
-    max-width: 55ch;
+    max-width: 600px;
+    padding-right: 50px;
+}
+
+#about .container-2 {
+    min-width: 200px;
 }
 
 #about .container-1 p {
@@ -180,24 +198,15 @@ figcaption{
 }
 
 #about img {
-    position: absolute;
-    right: 0px;
-    top: 125px;
     height: 450px;
 }
 
 #about .mission {
-    position: absolute;
     text-align: center;
-    max-width: 40ch;
-    left: 350px;
-    bottom: 110px
+    padding: 100px 30% 0;
 }
 
 #projects .container-1 {
-    position: absolute;
-    top: 100px;
-    left: 405px;
     text-align: center;
 }
 
@@ -205,7 +214,7 @@ figcaption{
     position: absolute;
     height: 120px;
     top: 100px;
-    right: 200px;
+    right: 140px;
     rotate: 20deg;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -215,22 +224,33 @@ figcaption{
     position: absolute;
     height: 120px;
     top: 100px;
-    left: 200px;
+    left: 140px;
     rotate: -20deg;
 }
 
-#projects .project-grid {
-    position: absolute;
-    top: 300px;
-    left: 95px;
-    display: grid;
-    grid-template-columns: 350px 150px 100px 550px;
-    grid-template-rows: 40px 150px;
+#projects .flex {
+    padding-top: 75px;
+    justify-content: space-around;
 }
 
-#projects .head {
-    font-weight: bold;
-    font-size: larger;
+#projects .child {
+    max-width: 350px;
+}
+
+@media screen and (max-width: 1000px) {
+    #projects .flex {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+    
+    #projects .child {
+        padding-bottom: 25px;
+    }
+
+    .hammer-1, .hammer-2 {
+        opacity: 0;
+    }
 }
 
 #projects .icon {
@@ -238,9 +258,8 @@ figcaption{
 }
 
 #projects .container-2 {
-    position: absolute;
-    left: 545px;
-    bottom: 150px;
+    text-align: center;
+    padding-top: 100px;
     
 }
 
@@ -252,15 +271,13 @@ figcaption{
 }
 
 #contact .container-1 {
-    position: absolute;
-    left: 360px;
     text-align: center;
+    padding: 0 25%;
 }
 
-#contact .container-2 {
-    position: absolute;
-    top: 255px;
-    left: 200px;
+#contact .flex {
+    justify-content: space-evenly;
+    padding: 50px
 }
 
 #contact .container-2 img {
@@ -268,10 +285,7 @@ figcaption{
 }
 
 #contact .container-3 {
-    position: absolute;
-    max-width: 60ch;
-    right: 200px;
-    top: 230px;
+    padding-left: 100px;
 }
 
 #contact .container-3 span {
@@ -280,13 +294,10 @@ figcaption{
 
 
 #contact .container-4 {
-    position: absolute;
     font-size:x-large;
-    max-width: 45ch;
     text-align: center;
-    left: 310px;
-    bottom: 50px;
     font-weight: bold;
+    padding: 0 15%;
 }
 
 #contact li {
