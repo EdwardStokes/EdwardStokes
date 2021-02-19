@@ -167,8 +167,8 @@ figcaption{
     display: inline-block;
     position: relative;
     max-width: 100%;
-    width: 500px;
-    height: 500px;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 #home .container-3 {
@@ -182,7 +182,7 @@ figcaption{
 
 #about .container-1 {
     max-width: 600px;
-    padding-right: 50px;
+    
 }
 
 #about .container-2 {
@@ -198,7 +198,7 @@ figcaption{
 }
 
 #about img {
-    height: 450px;
+    max-height: 450px;
 }
 
 #about .mission {
@@ -238,6 +238,10 @@ figcaption{
 }
 
 @media screen and (max-width: 1000px) {
+    #about .container-1 {
+        text-align: center;
+    }
+
     #projects .flex {
         flex-direction: column;
         align-content: center;
@@ -249,6 +253,10 @@ figcaption{
     }
 
     .hammer-1, .hammer-2 {
+        opacity: 0;
+    }
+
+    #contact span {
         opacity: 0;
     }
 }
