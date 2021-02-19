@@ -167,8 +167,8 @@ figcaption{
     display: inline-block;
     position: relative;
     max-width: 100%;
-    max-width: 500px;
-    max-height: 500px;
+    width: 500px;
+    height: 500px;
 }
 
 #home .container-3 {
