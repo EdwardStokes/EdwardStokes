@@ -33,7 +33,6 @@ header {
     display: block;
     z-index: 3;
     border-bottom-style: solid;
-    background-color: #21357c;
     background-color: #AC0226;
     opacity: 0.8;
     color: white;
@@ -81,7 +80,7 @@ header {
     height: 100%;
     display: table;
     float: left;
-    padding: 0px 15px;
+    padding: 0px 25px;
     font-size: 90%;
     
 }
