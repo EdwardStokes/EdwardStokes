@@ -1,152 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&amp;display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    
+    
+    <link href="/dist/output.css" rel="stylesheet">
     <title>Edward Stokes</title>
 </head>
 
-<body>
-    <header class="header"> 
-
-        <div class="inner-header">
-            <div class="name-container">
-                <h2>Edward Stokes - Aspiring Web Developer</h2>
-            </div>
-
-            <ul class="nav"> 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">My Projects</a></li>
-                <li><a href="#contact">Get In Touch</a></li>
-            </ul>
-        </div>
-    </header>
-
-    <div class="content">
-        <div id="intro" class="section">
-            <img id="silhouette" src="./images/sil.png" alt="silhouette of Ed's desk">
-
-        </div>
-
-        <div id="home" class="section">
-            <div class="container-1">
-                <h1> Hi. <span>&#128075</span> Nice to meet you!</h1>
-                <p>My name is Ed, I'm a self-taught developer and you've arrived at my very first website.
-                    Hover over the photo for a visualisation of my progress.
-                </p>
-            </div>
-
-            <div class="container-2">
-                <figure>
-                    <img class="profile" src="./images/profile.jpg" alt="picture of Ed">
-                    <img class="profile-aged" src="./images/profile-aged.jpg" alt="aged picture of Ed">
-                </figure>    
-            </div>
-
-            <div class="container-3">
-                <h3>Find more below!</h3>
-            </div>
-            
-        </div>
-
-        <div id="about" class="section">
-
-            <div class="flex">
-                <div class="container-1">
-                    <h2>The Details</h2>
-                    <p> I began learning to program to make use of my free time during the first Covid lockdown.</p>
-                    <p> I started first by practicing challenges on Codewars in Python before enrolling on a pilot course 
-                        on Jetbrains Academy.</p> 
-                    <p> More recently I've brushed up on HTML and CSS by completing courses on Code Academy
-                        and learned JavaScript as a second language, with the intention of starting up in web development.</p>
-                    <p>In previous lives I've worked in Education, Care, Student Housing, Widening Participation and most recently, 
-                        Construction. </p>
-                </div>
-
-                <div class="container-2">
-                    <img src="./images/laptop.png" alt="">
-                </div>
-            </div>
-
-            <h2 class="mission"> I'm searching for an entry-level position to begin my career as a professional.</h2>
-        </div>
-
-        <div id="projects" class="section">
-
-            <img src="./images/hammer.png" class="hammer-1" alt="hammer image">
-            <img src="./images/hammer.png" class="hammer-2" alt="hammer image">
-
-            <div class="container-1">
-                <h1>My Projects</h1>
-                <p> As time progresses I will link the projects I've been working on. <br> This is what I'm proudest of so far: </p>
-
-                
-            </div>
-
-            <div class="flex">
-                <div class="name child">
-                    <h3>Name</h3>
-                    <p>International Nextflix Comparison</p> 
-                </div>
-
-                <div class="language child">
-                    <h3>Language</h3>
-                    <p>Python</p> 
-                </div>
-
-                <div class="link child">
-                    <h3>Link</h3>
-                    <br>
-                    <a href="https://github.com/EdwardStokes/Netflix-International-Comparison"><img class="icon" src="images/git.png" alt="github icon"></a>
-                </div>
-
-                <div class="describe child">
-                    <h3>Description</h3>
-                    <p>It's a nightmare to find the right a film to watch with your friends abroad.<br><br> This program solves that.<br><br>
-                        It scrapes the comparison website Finder for Netflix listings and compliles a list for two of twenty-seven possible. 
-                        The list can be filtered by genre and searched alphabetically.
-                    </p>
-                </div>
-            </div>
-
-            <div class="container-2">
-                <h2>Watch this space...</h2>
-            </div>
-        </div>
-
-        <div id="contact" class="section">
-            <div class="container-1">
-                <h1>Get in touch! &#128512</h1>
-                <p>
-                    If you've arrived at this website I would love to get feedback  
-                    from you. Don't hesitate to connect in whichever whichever way works best:
-
-                </p>
-            </div>
-
-            <div class="flex">
-                <div class="container-2">
-                    <img src="./images/connect.png" alt="connection icon">
-                </div>
+<body class="bg-primary">
     
-                <div class="container-3">
-                    <ul>
-                        <li><a href="mailto:e.l.stokes@outlook.com"><img class="icon" src="./images/email.png" alt="Email icon"> <span>Email</span> </a></li>
-                        <li><a href="https://www.linkedin.com/in/edward-stokes-6503011b9/"> <img class="icon" src="./images/linkedin.png" alt="linkedin icon"><span>Linkedin</span></a></li>
-                        <li><a href="https://github.com/EdwardStokes"><img class="icon" src="./images/git.png" alt="github icon"><span>Github</span></a></li>
-                        <li><a href="https://www.codewars.com/users/SlyEdE"><img class="icon" src="./images/codewars.png" alt="codewars icon"><span>Codewars</span></a></li>
-                    </ul>
-                </div>    
-            </div>
-
-                   <div class="container-4">
-            <p>I would be particularly excited to hear from experienced professionals, or (even better) anyone with a tip re employment.</p>
-                    
+    <div class="container mx-auto">
+    
+    
+    <div class="">
+        
+        <div class="text-center">
+            <img src="img/logo-white.png" class="inline-block h-20 w-30" alt="logo">
+            <h1 class="whitespace-no-wrap text-3xl md:text-6xl mx-auto">Edward Stokes</h1>
         </div>
-
-        </div>
+        
+        <p class="color-primary text-center text-2xl m-2"> Software Developer<p>
     </div>
+
+    
+
+    <div class="mr-">
+        <section>
+            <ul class="px-4 pb-4">
+                <li id="about-1">
+                <img src="img/cursor.png" alt="Cursor" class="cursor" >
+                <a class="text-white">About</a>
+                </li>
+                <li id="contact">
+                <img src="img/cursor.png" alt="Cursor" class="cursor">
+                <a class="text-white">Contact</a>
+                </li>
+            </ul>
+        </section>
+    
+        <section id="contact-content">
+            <ul class="px-4 pb-4">
+                <li>
+                <img src="img/cursor.png" alt="Cursor" class="cursor">
+                <a href="mailto:e.l.stokes@outlook.com" class="text-white">Email</a>
+                </li>
+                <li>
+                <img src="img/cursor.png" alt="Cursor" class="cursor">
+                <a href="https://www.linkedin.com/in/edward-stokes-6503011b9/" class="text-white">LinkedIn</a>
+                </li>
+                <li>
+                    <img src="img/cursor.png" alt="Cursor" class="cursor">
+                    <a href="https://github.com/EdwardStokes" class="text-white">GitHub</a>
+                    </li>
+                    <li>
+                    <img src="img/cursor.png" alt="Cursor" class="cursor">
+                    <a href="https://www.codewars.com/users/SlyEdE" class="text-white">CodeWars</a>
+                    </li>
+            </ul>
+        </section>
+    </div>
+
+
+    <section id="about-content-1" class="content">
+        I am a self-taught developer who has been working professionally since December 2021.
+    </section>
+
+    <div class="flex flex-col content" id="about-content-2">
+        <button class="self-end"><img src="img/cursor.png" alt="Cursor" class="cursor stop">Cool.</button>
+        <button class="self-end" id="about-2"><img src="img/cursor.png" alt="Cursor" class="cursor">Tell me more...</button>
+    </div>
+
+    <section class="content" id="about-content-3">
+        I like programming in Python, which is the first language I learned. I also know JavaScript and use PHP in my current role.
+    </section>
+
+    <section class="content" id="about-content-4">
+        I am a self-taught developer who has been working professionally since December 2021.
+    </section>
+
+    <div class="flex flex-col content" id="about-content-5">
+        <button class="self-end stop"><img src="img/cursor.png" alt="Cursor" class="cursor">Okay.</button>
+        <button class="self-end" id="about-3"><img src="img/cursor.png" alt="Cursor" class="cursor">How did you make this?</button>
+    </div>
+
+    <section class="content" id="about-content-6">
+        This site is built using the JQuery & <a href="https://github.com/davidd647/ff7-tailwindcss">FF7 TailwindCSS</a>.
+    </section>
+
+    <div class="flex flex-col content" id="end">
+        <button class="self-end"><img src="img/cursor.png" alt="Cursor" class="cursor">... Nice.</button>
+    </div>
+
+    </div>
+
+    <script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript" src="main.js"></script>
+        
 </body>
 </html>
