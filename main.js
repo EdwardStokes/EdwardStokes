@@ -3,7 +3,9 @@ $(document).ready(() => {
     const $aboutButton2 = $('#about-2');
     const $aboutButton3 = $('#about-3');
     const $endButton = $('#end');
+    const $cursors = $('button .cursor');
     const $contactButton = $('#contact');
+    const $buttons = $('button');
 
     const $aboutContent = $('.content');
     const $aboutContent1 = $('#about-content-1');
@@ -16,30 +18,61 @@ $(document).ready(() => {
     const $contactContent = $('#contact-content');
 
     $aboutContent.hide();
+    $cursors.hide();
     $contactContent.hide();
     
+    $($buttons).hover((event)=> {
+        $(event.currentTarget).children('img').show()
+    }, 
+      ()=> {$cursors.hide()})
+
     $contactButton.on('click', () => {
         $contactContent.show();
     })
 
     $aboutButton1.on('click', () => {
         $aboutContent1.show();
-        $aboutContent2.show();
+        setTimeout(() => {
+            $aboutContent2.show();    
+        }, 800);
+        
     })
 
     $aboutButton2.on('click', () => {
-        $aboutContent3.show();
-        $aboutContent4.show();
-        $aboutContent5.show();
+        setTimeout(() => {
+            $aboutContent3.show();
+        }, 800
+        )
+
+        setTimeout(() => {
+            $aboutContent4.show();
+        }, 1800
+        )
+        
+        setTimeout(() => {
+            $aboutContent5.show();
+        }, 2800
+        )
     })
 
     $aboutButton3.on('click', () => {
-        $aboutContent6.show();
-        $endButton.show();
+        setTimeout(() => {
+            $aboutContent6.show();
+        }, 800
+        )
+
+        setTimeout(() => {
+            $endButton.show();
+        }, 1800
+        )
     })
 
     $endButton.on('click', () => {
-        $aboutContent.hide();
+
+        setTimeout(() => {
+            $aboutContent.hide();
+        }, 800)
+        
     })
 
 });
